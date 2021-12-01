@@ -1,0 +1,25 @@
+body {
+  background: rgb(187, 219, 218);
+}
+input {
+  height: 25px;
+  padding: 5px;
+}
+.el-input-group__append,
+.el-input-group__prepend {
+  background-color: #3c9cc2 !important;
+  color: whitesmoke !important;
+  font-weight: bold;
+}
+.el-input-group {
+  width: 80% !important;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.center {
+  text-align: center;
+}
