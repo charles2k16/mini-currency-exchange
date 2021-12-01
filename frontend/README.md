@@ -14,14 +14,6 @@ To set up project install project dependencies bt running
 npm install
 ```
 
-## Compiles and hot-reloads for development
-
-Run the project locally on your computer for development.
-
-```
-npm run serve
-```
-
 ## Compiles and minifies for production
 
 Run the build command when you are ready for production

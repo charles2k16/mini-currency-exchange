@@ -52,26 +52,27 @@ ACCESS_KEY_ID_RATES= // get a free currency api key here with rates from https:/
 
 ### This part is optional
 
-To run frontend seperately, you would have to copy the frontend folder to your prefered destination.
-Once its done you can run your code in dev mode by running
+if you would want To run frontend seperately, you would have to move the frontend folder to your prefered destination.
+Once its done you can run open it your preffered editor and run dev mode by running
 
 ```
 npm run serve
 ```
 
-The next step is to uncomment cors code from the server.js file in the node project
+The next step is to uncomment cors code from the node.js code. The entry file is server.js.
+Server.js file can be found on the root folder of the node project
 
 ```javascript
-// app.use(
-//   cors({
-//     origin: 'http://localhost:8080',
-//   })
-// );
+app.use(
+  cors({
+    origin: 'http://localhost:8080',
+  })
+);
 ```
 
-## Configure or Run frontend internally
+## Alter changes or run test in the vue file
 
-To run or change frontend code or make some changes, cd into the directory and install the cli dependencies
+To run or change the vue frontend code or make some changes, cd into the directory and install the cli dependencies
 
 ```
 cd frontend
@@ -85,4 +86,10 @@ After installing dependencies you can successfully make changes and build to tak
 
 ```
 npm run build
+```
+
+You can also run tests
+
+```
+npm run test:unit
 ```

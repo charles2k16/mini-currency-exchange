@@ -45,10 +45,6 @@ app.use(express.static(path.join(__dirname, 'frontend/dist')));
 app.use('/api/exchange', exchanges);
 app.use('/api/currencies', currencies);
 
-// app.get('/', (req, res) => {
-//   res.sendFile(path.join(__dirname, '../frontend/build/index.html'));
-// });
-
 const PORT = process.env.PORT || 8000;
 
 const server = app.listen(
