@@ -7,7 +7,7 @@ const cors = require('cors');
 // const cors = require('cors');
 
 // Load env vars
-dotenv.config({ path: './config/config.env' });
+dotenv.config({ path: './config.env' });
 
 // Route files
 const exchanges = require('./routes/exchanges');
