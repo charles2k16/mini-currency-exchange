@@ -72,7 +72,6 @@ export default {
       amount: null,
       result: null,
       toRateValue: null,
-      currencies: [],
       btnLoading: false,
       showMarketRates: false,
       convertForm: {
@@ -82,19 +81,12 @@ export default {
       },
     };
   },
-  created() {
-    this.getCurrencies();
-  },
   computed: {
     noValue() {
       return this.fromCurrency === '' || this.toCurrency === '';
     },
   },
   methods: {
-    async getCurrencies() {
-      const response = await currenciesService.getCurrencies();
-      this.currencies = response.data;
-    },
     onChangedFromCurrency(fromCurrencySymbol) {
       this.fromCurrency = fromCurrencySymbol;
       this.convertBaseRates();

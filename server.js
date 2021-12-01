@@ -19,11 +19,11 @@ const app = express();
 app.use(express.json({ limit: '50mb' }));
 
 // CORS
-// app.use(
-//   cors({
-//     origin: 'http://localhost:8080',
-//   })
-// );
+app.use(
+  cors({
+    origin: 'http://localhost:8080',
+  })
+);
 
 // Dev logging middleware
 if (process.env.NODE_ENV === 'development') {
