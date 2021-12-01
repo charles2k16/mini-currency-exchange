@@ -1,6 +1,7 @@
 <template>
   <div>
     <select
+    id="conv_select"
       class="conv_select"
       v-model="currencySymbol"
       @change="onChangeCurrency"
